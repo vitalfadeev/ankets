@@ -1,1 +1,208 @@
-Hello World
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <!--
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+    -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <title>Hello, world!</title>
+
+    <script src="js/bootstrap.min.js"></script>
+  </head>
+
+  <body class="bg-light">
+
+    <div class="container">
+      <div class="py-5 text-center">
+        <img class="d-block mx-auto mb-4" src="../../assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
+        <h2>Селение</h2>
+        <p class="lead">Below is an example form built entirely with Bootstrap's form controls. Each required form group has a validation state that can be triggered by attempting to submit the form without completing it.</p>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6 order-md-2 mb-4">
+          <h4 class="d-flex justify-content-between align-items-center mb-3">
+            <span class="text-muted">Исходный текст</span>
+            <span class="badge badge-secondary badge-pill">3</span>
+          </h4>
+
+          <form class="card" action="https://docs.google.com/forms/d/e/1FAIpQLSf382b1btFR2LMpPfVTxzL_KUgG33lL_cr_7uvwJbdxb-Cezg/formResponse" method="post">
+            <div class="">
+              <textarea class="form-control" placeholder="Text here" id="the-text" rows="8" name="entry.45798751">
+Правообладатель:
+-
+- Физ. лицо
+- Коллектив
+
+Форма владения / распоряжения:
+-
+- Аренда
+- Собственность
+              </textarea>
+            </div>
+            <div><br></div>
+
+<!--
+
+            <hr class="mb-4">
+
+            <div class="">
+              <button type="submit" class="btn btn-secondary">Да</button>
+            </div>
+-->
+
+            <button class="btn btn-primary btn-lg btn-block" type="submit">Утвердить</button>
+
+            <input type="hidden" name="fvv" value="1">
+            <input type="hidden" name="draftResponse" value="[null,null,&quot;-3927871373318959539&quot;]">
+            <input type="hidden" name="pageHistory" value="0">
+            <input type="hidden" name="fbzx" value="-3927871373318959539">
+          </form>
+
+        </div>
+
+        <div class="col-md-6 order-md-1">
+          <h4 class="mb-3">Анкета</h4>
+          <form class="needs-validation" novalidate>
+
+            <div id="the-checkers">
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <footer class="my-5 pt-5 text-muted text-center text-small">
+        <p class="mb-1">&copy; 2017-2018 Company Name</p>
+        <ul class="list-inline">
+          <li class="list-inline-item"><a href="#">Privacy</a></li>
+          <li class="list-inline-item"><a href="#">Terms</a></li>
+          <li class="list-inline-item"><a href="#">Support</a></li>
+        </ul>
+      </footer>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!--
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+    -->
+    <script src="js/jquery-3.3.1.slim.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/holder.min.js"></script>
+    <script src="convertor.js"></script>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <!--
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="../../assets/js/vendor/popper.min.js"></script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+    <script src="../../assets/js/vendor/holder.min.js"></script>
+    -->
+    <script>
+      // Example starter JavaScript for disabling form submissions if there are invalid fields
+      (function() {
+        'use strict';
+
+        window.addEventListener('load', function() {
+          // Fetch all the forms we want to apply custom Bootstrap validation styles to
+          var forms = document.getElementsByClassName('needs-validation');
+
+          // Loop over them and prevent submission
+          var validation = Array.prototype.filter.call(forms, function(form) {
+            form.addEventListener('submit', function(event) {
+              if (form.checkValidity() === false) {
+                event.preventDefault();
+                event.stopPropagation();
+              }
+              form.classList.add('was-validated');
+            }, false);
+          });
+        }, false);
+      })();
+    </script>
+
+    <script>
+        function get_text(id) {
+            var text = document.getElementById(id).value;
+            return text;
+        }
+
+        function set_text(id, text) {
+            document.getElementById(id).value = text;
+        }
+
+        // bind checkbox events
+        function bind_checkers_events(selector) {
+            $(selector).change(function() {
+                //alert($(this).prop('checked'));
+                var builder = new ITextBuilder();
+                var text = get_text("the-text");
+                var id = $(this).prop('id');
+                var pos = id.substring(4);
+                var is_checked = $(this).prop('checked');
+
+                newtext = builder.build(text, pos, is_checked);
+
+                set_text("the-text", newtext);
+            })
+        }
+
+        //
+        function update_textarea_height(textid, checkersid) {
+            var textarea = document.getElementById(textid);
+            var checkers = document.getElementById(checkersid);
+
+            $(textarea).height($(checkers).height());
+        }
+
+        //
+        function update_checkers() {
+            var text = get_text("the-text");
+
+            var lexer = new ILexer();
+            var lexems = lexer.lexe(text);
+
+            var parser = new IParser();
+            var parsed = parser.parse(lexems);
+
+            //console.log(parsed);
+
+            var builder = new ICheckersBuilder();
+            var html = builder.build(parsed);
+
+            //console.log(html);
+
+            document.getElementById("the-checkers").innerHTML = html;
+
+            //
+            bind_checkers_events('#the-checkers input.custom-control-input');
+
+            // update textarea height
+            update_textarea_height("the-text", "the-checkers");
+        }
+
+        // bind textarea on change
+        $('#the-text').bind('input propertychange', function() {
+              if (this.value.length) {
+                update_checkers();
+              }
+        });
+
+        // init checkboxes
+        update_checkers();
+    </script>
+  </body>
+</html>
